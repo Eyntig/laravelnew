@@ -6,7 +6,51 @@
     <link rel="stylesheet" href="{{asset('asset/bootstrap/icons/font/bootstrap-icons.min.css')}}">
     <link rel="stylesheet" href="{{ asset('css/css.css') }}">
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
-
+    <style>
+    body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+          background-color: #f2f2f2;
+            color: black;
+            padding: 20px;
+            text-align: center;
+        }
+        .ee {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+        .contact-info {
+            margin-bottom: 20px;
+        }
+        .contact-form input[type="text"],
+        .contact-form input[type="email"],
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        .contact-form textarea {
+            height: 150px;
+        }
+        .contact-form input[type="submit"] {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .contact-form input[type="submit"]:hover {
+            background-color: #555;
+        }
+    </style>
 <head>
         <title>CarsView - @yield('title')</title>
     </head>
@@ -49,48 +93,27 @@
 </header>
 @show
 
-
-@section('home')
-<section class="hero">
-  <div class="container">
-    <div class="hero-content">
-      <h1>Discover Your Perfect Ride</h1>
-      <p>Find the best cars from our wide selection</p>
-      <a href="#" class="cta-button">Explore Now</a>
+<header>
+        <h1>Contact Us</h1>
+        <p>Get in touch with us for any inquiries or feedback.</p>
+    </header>
+    <div class="ee">
+        <div class="contact-info">
+            <h2>Contact Information</h2>
+            <p>Email: info@carsview.com</p>
+            <p>Phone: +123 456 7890</p>
+            <p>Address: 123 Car Street, City, Country</p>
+        </div>
+        <div class="contact-form">
+            <h2>Send us a Message</h2>
+            <form action="#" method="post">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <input type="submit" value="Send Message">
+            </form>
+        </div>
     </div>
-    <div class="hero-image">
-      <img src="images/2.png" alt="Car Image">
-    </div>
-  </div>
-</section>
-
-
-
-<section class="features">
-  <div class="container">
-    <div class="feature">
-      <i class="fas fa-car"></i>
-      <h2>Wide Selection</h2>
-      <p>Explore a wide range of car models from various manufacturers.</p>
-    </div>
-    <div class="feature">
-      <i class="fas fa-search"></i>
-      <h2>Easy Search</h2>
-      <p>Quickly find your dream car using our intuitive search filters.</p>
-    </div>
-    <div class="feature">
-      <i class="fas fa-info-circle"></i>
-      <h2>Detailed Information</h2>
-      <p>Get detailed specifications, photos, and reviews for each car.</p>
-    </div>
-    <div class="feature">
-      <i class="fas fa-hand-holding-usd"></i>
-      <h2>Financing Options</h2>
-      <p>Discover flexible financing and leasing options for your purchase.</p>
-    </div>
-  </div>
-</section>
-@show
 
 @section('about')
 <section class="about">

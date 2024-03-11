@@ -2,11 +2,39 @@
 <html lang="en">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="icon" href="{{asset('images/1.png')}}">
+  <link rel="icon" href="{{asset('images1.png')}}">
     <link rel="stylesheet" href="{{asset('asset/bootstrap/icons/font/bootstrap-icons.min.css')}}">
     <link rel="stylesheet" href="{{ asset('css/css.css') }}">
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
-
+    <style>
+        /* CSS styles for the page layout */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+          background-color: #f2f2f2;
+            color: black;
+            padding: 20px;
+            text-align: center;
+        }
+        .ff {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+        .faq-item {
+            border-bottom: 1px solid #ccc;
+            padding: 20px 0;
+        }
+        .faq-item h2 {
+            margin-top: 0;
+        }
+        .faq-item p {
+            margin-top: 5px;
+        }
+        </style>
 <head>
         <title>CarsView - @yield('title')</title>
     </head>
@@ -50,47 +78,25 @@
 @show
 
 
-@section('home')
-<section class="hero">
-  <div class="container">
-    <div class="hero-content">
-      <h1>Discover Your Perfect Ride</h1>
-      <p>Find the best cars from our wide selection</p>
-      <a href="#" class="cta-button">Explore Now</a>
+<header>
+        <h1>Frequently Asked Questions</h1>
+        <p>Find answers to common questions about CarsView.</p>
+    </header>
+    <div class="ff">
+        <div class="faq-item">
+            <h2>How can I buy a car through CarsView?</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eget eros nec ipsum placerat ultricies.</p>
+        </div>
+        <div class="faq-item">
+            <h2>What types of payment do you accept?</h2>
+            <p>Nulla facilisi. Nullam commodo elit non ullamcorper elementum. Suspendisse potenti.</p>
+        </div>
+        <div class="faq-item">
+            <h2>Do you offer financing options?</h2>
+            <p>Vivamus at nisi id sapien vulputate ultrices. Integer mattis dui et purus suscipit, in varius justo vulputate.</p>
+        </div>
+        <!-- Add more FAQ items here -->
     </div>
-    <div class="hero-image">
-      <img src="images/2.png" alt="Car Image">
-    </div>
-  </div>
-</section>
-
-
-
-<section class="features">
-  <div class="container">
-    <div class="feature">
-      <i class="fas fa-car"></i>
-      <h2>Wide Selection</h2>
-      <p>Explore a wide range of car models from various manufacturers.</p>
-    </div>
-    <div class="feature">
-      <i class="fas fa-search"></i>
-      <h2>Easy Search</h2>
-      <p>Quickly find your dream car using our intuitive search filters.</p>
-    </div>
-    <div class="feature">
-      <i class="fas fa-info-circle"></i>
-      <h2>Detailed Information</h2>
-      <p>Get detailed specifications, photos, and reviews for each car.</p>
-    </div>
-    <div class="feature">
-      <i class="fas fa-hand-holding-usd"></i>
-      <h2>Financing Options</h2>
-      <p>Discover flexible financing and leasing options for your purchase.</p>
-    </div>
-  </div>
-</section>
-@show
 
 @section('about')
 <section class="about">

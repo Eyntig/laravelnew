@@ -2,11 +2,28 @@
 <html lang="en">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="icon" href="{{asset('images/1.png')}}">
+  <link rel="icon" href="{{asset('images1.png')}}">
     <link rel="stylesheet" href="{{asset('asset/bootstrap/icons/font/bootstrap-icons.min.css')}}">
     <link rel="stylesheet" href="{{ asset('css/css.css') }}">
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
-
+<style>
+     body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+          background-color: #f2f2f2;
+            color: black;
+            padding: 20px;
+            text-align: center;
+        }
+        .cc {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+</style>
 <head>
         <title>CarsView - @yield('title')</title>
     </head>
@@ -50,19 +67,29 @@
 @show
 
 
-@section('home')
-<section class="hero">
-  <div class="container">
-    <div class="hero-content">
-      <h1>Discover Your Perfect Ride</h1>
-      <p>Find the best cars from our wide selection</p>
-      <a href="#" class="cta-button">Explore Now</a>
+<header>
+        <h1>About Us</h1>
+        <p>Learn more about CarsView and our mission.</p>
+    </header>
+    <div class="cc">
+        <section>
+            <h2>Who We Are</h2>
+            <p>CarsView is a passionate team of automotive enthusiasts dedicated to providing comprehensive and unbiased information about cars. We believe in empowering consumers with knowledge to make informed decisions when it comes to purchasing, maintaining, and enjoying their vehicles.</p>
+        </section>
+        <section>
+            <h2>Our Mission</h2>
+            <p>Our mission is to become the go-to destination for car enthusiasts seeking reliable reviews, insightful articles, and helpful resources. We strive to deliver high-quality content that educates, entertains, and inspires our audience.</p>
+        </section>
+        <section>
+            <h2>Why Choose CarsView</h2>
+            <ul>
+                <li>Expertise: Our team consists of seasoned automotive professionals with years of experience in the industry.</li>
+                <li>Unbiased Reviews: We provide honest and unbiased reviews of various car models, helping consumers make informed decisions.</li>
+                <li>Comprehensive Coverage: From new releases to classic cars, we cover a wide range of topics to cater to diverse interests.</li>
+                <li>Community Engagement: We foster a vibrant community of car enthusiasts, encouraging discussions and sharing of knowledge.</li>
+            </ul>
+        </section>
     </div>
-    <div class="hero-image">
-      <img src="images/2.png" alt="Car Image">
-    </div>
-  </div>
-</section>
 
 
 
@@ -87,21 +114,6 @@
       <i class="fas fa-hand-holding-usd"></i>
       <h2>Financing Options</h2>
       <p>Discover flexible financing and leasing options for your purchase.</p>
-    </div>
-  </div>
-</section>
-@show
-
-@section('about')
-<section class="about">
-  <div class="container">
-    <div class="about-content">
-      <h2>About Us</h2>
-      <p>Welcome to CarView, your one-stop destination for exploring the latest and greatest in the world of automobiles. Our mission is to provide car enthusiasts with a seamless and enjoyable experience as they search for their dream ride.</p>
-      <p>With a passion for cars and a commitment to excellence, our team works tirelessly to curate a diverse selection of vehicles and provide comprehensive information to help you make informed decisions.</p>
-    </div>
-    <div class="about-image">
-      <img src="images/3.png" alt="About Us Image">
     </div>
   </div>
 </section>

@@ -2,11 +2,38 @@
 <html lang="en">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="icon" href="{{asset('images/1.png')}}">
+  <link rel="icon" href="{{asset('images/1.png')}}">
     <link rel="stylesheet" href="{{asset('asset/bootstrap/icons/font/bootstrap-icons.min.css')}}">
     <link rel="stylesheet" href="{{ asset('css/css.css') }}">
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
-
+    <style>
+       body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        .bb {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+        .car {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .car img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
 <head>
         <title>CarsView - @yield('title')</title>
     </head>
@@ -50,46 +77,27 @@
 @show
 
 
-@section('home')
-<section class="hero">
-  <div class="container">
-    <div class="hero-content">
-      <h1>Discover Your Perfect Ride</h1>
-      <p>Find the best cars from our wide selection</p>
-      <a href="#" class="cta-button">Explore Now</a>
+        @section('cars')
+        <h1 style="text-align:center">Cars</h1>
+        <p style="text-align:center">Explore our collection of featured cars.</p>
+    </header>
+    <div class="bb">
+        <div class="car">
+            <img src="images/14.jpg" alt="Car 1">
+            <h2>Car Model 1</h2>
+            <p>Description of Car Model 1.</p>
+            <p>Price: $XX,XXX</p>
+            <a href="#">Learn More</a>
+        </div>
+        <div class="car">
+            <img src="images/15.jpg" alt="Car 2">
+            <h2>Car Model 2</h2>
+            <p>Description of Car Model 2.</p>
+            <p>Price: $XX,XXX</p>
+            <a href="#">Learn More</a>
+        </div>
+        <!-- Add more cars here -->
     </div>
-    <div class="hero-image">
-      <img src="images/2.png" alt="Car Image">
-    </div>
-  </div>
-</section>
-
-
-
-<section class="features">
-  <div class="container">
-    <div class="feature">
-      <i class="fas fa-car"></i>
-      <h2>Wide Selection</h2>
-      <p>Explore a wide range of car models from various manufacturers.</p>
-    </div>
-    <div class="feature">
-      <i class="fas fa-search"></i>
-      <h2>Easy Search</h2>
-      <p>Quickly find your dream car using our intuitive search filters.</p>
-    </div>
-    <div class="feature">
-      <i class="fas fa-info-circle"></i>
-      <h2>Detailed Information</h2>
-      <p>Get detailed specifications, photos, and reviews for each car.</p>
-    </div>
-    <div class="feature">
-      <i class="fas fa-hand-holding-usd"></i>
-      <h2>Financing Options</h2>
-      <p>Discover flexible financing and leasing options for your purchase.</p>
-    </div>
-  </div>
-</section>
 @show
 
 @section('about')
