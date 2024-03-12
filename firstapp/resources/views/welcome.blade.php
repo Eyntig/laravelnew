@@ -56,7 +56,6 @@
     <div class="hero-content">
       <h1>Discover Your Perfect Ride</h1>
       <p>Find the best cars from our wide selection</p>
-      <a href="#" class="cta-button">Explore Now</a>
     </div>
     <div class="hero-image">
       <img src="images/2.png" alt="Car Image">
