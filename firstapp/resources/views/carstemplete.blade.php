@@ -84,15 +84,29 @@
     <div class="bb">
         <div class="car">
             <img src="images/14.jpg" alt="Car 1">
-            <h2>Car Model 1</h2>
-            <p>Description of Car Model 1.</p>
+            <h2>Bugatti Veyron</h2>
+            <p>Description of Car model.</p>
             <p>Price: $XX,XXX</p>
             <a href="#">Learn More</a>
         </div>
         <div class="car">
-            <img src="images/15.jpg" alt="Car 2">
-            <h2>Car Model 2</h2>
-            <p>Description of Car Model 2.</p>
+            <img src="images/15.png" alt="Car 2">
+            <h2>Lamborghini Aventador</h2>
+            <p>Description of Car Model.</p>
+            <p>Price: $XX,XXX</p>
+            <a href="#">Learn More</a>
+        </div>
+        <div class="car">
+            <img src="images/16.png" alt="Car 3">
+            <h2>Mclaren Spider</h2>
+            <p>Description of Car Model.</p>
+            <p>Price: $XX,XXX</p>
+            <a href="#">Learn More</a>
+        </div>
+        <div class="car">
+            <img src="images/17.png" alt="Car 2">
+            <h2>Laferrari</h2>
+            <p>Description of Car Model.</p>
             <p>Price: $XX,XXX</p>
             <a href="#">Learn More</a>
         </div>
@@ -122,13 +136,13 @@
     <div class="testimonial">
       <div class="testimonial-content">
         <p>"CarView helped me find the perfect car for my family. The selection was great, and the detailed information provided made the decision-making process a breeze."</p>
-        <cite>John Doe</cite>
+        <cite>John</cite>
       </div>
     </div>
     <div class="testimonial">
       <div class="testimonial-content">
         <p>"I had a fantastic experience shopping for a car on CarView. The website was easy to navigate, and the customer service was top-notch. Highly recommended!"</p>
-        <cite>Jane Smith</cite>
+        <cite>Smith</cite>
       </div>
     </div>
   </div>

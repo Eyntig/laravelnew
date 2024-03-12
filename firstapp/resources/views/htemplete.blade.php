@@ -89,14 +89,14 @@
         <section>
             <h2>Featured Cars</h2>
             <div class="car">
-                <img src="images/12.jpg" alt="Car 1">
-                <h3>Car Model 1</h3>
-                <p>Description of Car Model 1.</p>
+                <img src="images/12.png" alt="Car 1">
+                <h3>Mustang GT</h3>
+                <p>Description of Car</p>
             </div>
             <div class="car">
-                <img src="images/13.jpg" alt="Car 2">
-                <h3>Car Model 2</h3>
-                <p>Description of Car Model 2.</p>
+                <img src="images/13.png" alt="Car 2">
+                <h3>Dodge Demon</h3>
+                <p>Description of Car</p>
             </div>
             <!-- Add more featured cars here -->
         </section>
